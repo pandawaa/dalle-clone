@@ -17,9 +17,14 @@ const CreatePost = () => {
 
   const handleSubmit = () => {}
 
-  const handleChange = () => {}
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
 
-  const handleSurpriseMe = () => {}
+  const handleSurpriseMe = () => {
+    const randomPrompt = getRandomPrompt(form.prompt)
+    setForm({ ...form, prompt: randomPrompt })
+  }
 
   const generateImage = () => {}
 
@@ -48,7 +53,7 @@ const CreatePost = () => {
             type="text"
             name="prompt"
             placeholder="A plush toy robot sitting against a yellow wall"
-            value={form.name}
+            value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
             handleSurpriseMe={handleSurpriseMe}
