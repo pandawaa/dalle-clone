@@ -34,7 +34,7 @@ const CreatePost = () => {
         <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
         <p className="mt-2 text-[#666e75] text-[16px] max-w-[500px]">
           Create imaginative and visually stunning images throughh
-          DALLE-AI-CLONE and share them with the community
+          DALLE-AI-CLONE and sharing them with the community
         </p>
       </div>
 
