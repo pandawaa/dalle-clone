@@ -58,7 +58,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true)
         const response = await fetch(
-          "https://dalle-clone-swart.vercel.app//api/v1/dalle",
+          "https://dalle-clone-swart.vercel.app/api/v1/dalle",
           {
             method: "POST",
             headers: {
